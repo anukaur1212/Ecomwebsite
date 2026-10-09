@@ -1,0 +1,175 @@
+@import "tailwindcss";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 90%;
+  height: 100%;
+  border-radius: 30px;
+  margin-bottom: 30px;
+}
+
+@media (min-width:768px) {
+ .swiper {
+  width: 90%;
+  height: 100%;
+  border-radius: 30px;
+  margin-bottom: 30px;
+  }
+}
+
+  .swiper-slide{
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  padding: 10px;
+}
+
+  .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: flex;
+  align-items: center;
+  border-radius: 30px;
+}
+
+
+.Hero-Swiper {
+  margin: 0;
+}
+
+.Hero-Swiper .swiper {
+  width: 100%;
+}
+
+.Hero-Swiper .swiper-slide {
+  height: 450px;
+  padding: 4px;
+
+}
+
+.Hero-Swiper .swiper-slide img {
+  height: 70%;
+  width: 100%;
+  object-fit: fill;
+}
+
+.Hero-Swiper .swiper-slide #card {
+
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.Hero-Swiper .swiper-button-next,
+.Hero-Swiper .swiper-button-prev {
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  border-radius: 50%;
+  color: rgb(5, 69, 5);
+  padding: 5px;
+}
+
+
+.review-Swiper {
+  margin: 0;
+}
+
+.review-Swiper .swiper {
+  width: 100%;
+  /* background-color: aquamarine; */
+}
+
+.review-Swiper .swiper-slide {
+  height: 230px;
+  padding: 3;
+}
+
+@media (min-width:768px) {
+.review-Swiper .swiper-slide {
+  height: 230px;
+  padding: 1;
+}}
+
+
+.review-Swiper .swiper-slide img {
+  height: 50px;
+  width: 50px;
+  object-fit: fill;
+  border-radius: 50%;
+  display: none;
+}
+
+
+@media (min-width:768px) {
+  .review-Swiper .swiper-slide img {
+    height: 80px;
+    width: 80px;
+    object-fit: fill;
+    border-radius: 50%;
+    display: flex;
+  }
+}
+
+  .review-Swiper .swiper-slide #card {
+    height: 200px;
+    width: 265px;
+    margin: 0;
+    /* border: 2px solid; */
+    text-align: left;
+  }
+
+
+@media (min-width:768px) {
+  .review-Swiper .swiper-slide #card {
+    height: 200px;
+    width: 400px;
+    display: flex;
+    text-align: left;
+  }
+}
+
+.review-Swiper .swiper-button-next,
+.review-Swiper .swiper-button-prev {
+  width: 30px;
+  height: 30px;
+  background: green;
+  border-radius: 50%;
+  color: rgb(5, 69, 5);
+  padding: 5px;
+}
+
+.nav{
+  text-decoration: none;
+  color: #032E15;
+}
+
+.Product-Swiper {
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Product-Swiper .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #c5bfbf;
+  height: calc((100% - 30px) / 2) !important;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
