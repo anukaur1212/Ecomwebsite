@@ -4,7 +4,7 @@ import { ShoppingCart } from 'lucide-react';
 const products = [
   {
     id: 1,
-    name: "Premium Quality White Shoe",
+    name: "Premium Quality White sandals",
     price: 79.99,
     oldPrice: 99.99,
     image: "/src/Assets/img/shoe4.jpg",
@@ -13,7 +13,7 @@ const products = [
   },
   {
     id: 2,
-    name: "Classic Black Sneakers",
+    name: "Classic Black Sandals",
     price: 59.99,
     oldPrice: 79.99,
     image: "/src/Assets/img/shoe2.jpg",
@@ -22,7 +22,7 @@ const products = [
   },
   {
     id: 3,
-    name: "Casual Running Shoes",
+    name: "Casual Running Sandals",
     price: 69.99,
     oldPrice: 89.99,
     image: "/src/Assets/img/shoe4.jpg",
@@ -31,7 +31,7 @@ const products = [
   },
   {
     id: 4,
-    name: "Sporty Training Shoes",
+    name: "Sporty Training Sandals",
     price: 49.99,
     oldPrice: 69.99,
     image: "/src/Assets/img/p7.jpg",
@@ -40,7 +40,7 @@ const products = [
   },
   {
     id: 5,
-    name: "Lightweight Walking Shoes",
+    name: "Lightweight Walking Sandals",
     price: 54.99,
     oldPrice: 74.99,
     image: "/src/Assets/img/p7.jpg",
@@ -49,7 +49,7 @@ const products = [
   },
   {
     id: 6,
-    name: "Modern Casual Sneakers",
+    name: "Modern Casual Sandals",
     price: 64.99,
     oldPrice: 84.99,
     image: "/src/Assets/img/product5.jpg",
@@ -58,8 +58,8 @@ const products = [
   },
 
   {
-    id: 5,
-    name: "Lightweight Walking Shoes",
+    id: 7,
+    name: "Lightweight Walking Sandals",
     price: 54.99,
     oldPrice: 74.99,
     image: "/src/Assets/img/product3.jpg",
@@ -67,7 +67,7 @@ const products = [
     reviews: 478,
   },
   {
-    id: 6,
+    id: 8,
     name: "Modern Casual Sneakers",
     price: 64.99,
     oldPrice: 84.99,
@@ -77,8 +77,8 @@ const products = [
   },
 
   {
-    id: 5,
-    name: "Lightweight Walking Shoes",
+    id: 9,
+    name: "Lightweight Walking Sandals",
     price: 54.99,
     oldPrice: 74.99,
     image: "/src/Assets/img/product1.jpg",
@@ -86,8 +86,8 @@ const products = [
     reviews: 478,
   },
   {
-    id: 6,
-    name: "Modern Casual Sneakers",
+    id: 10,
+    name: "Modern Casual Sandals",
     price: 64.99,
     oldPrice: 84.99,
     image: "/src/Assets/img/product2.jpg",
