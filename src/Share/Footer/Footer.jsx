@@ -3,9 +3,9 @@ import React from 'react'
 const Footer = () => {
     return (
         <>
-            <div className='flex flex-col bg-green-950 text-white py-5'>
+            <div className='flex flex-col bg-green-950 text-white pt-5'>
 
-                <div className='grid grid-cols-2 lg:grid-cols-5 lg:p-4'>
+                <div className='grid grid-cols-2 lg:grid-cols-5 p-2 lg:p-4'>
 
                     <div className='lg:p-4 text-center'>
                         <h2 className='flex flex-col'>Viva
@@ -59,7 +59,7 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <div className='grid grid-cols-2 lg:grid-cols-4 px-4  gap-3 border-t '>
+                <div className='grid grid-cols-2 lg:grid-cols-4 px-4  py-2 gap-2 border-t '>
                     <p>@Viva 2026 All rights reserved</p>
                     <p>Privacy Policy</p>
                     <p>Terms of Service </p>
