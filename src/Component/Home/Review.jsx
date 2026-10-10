@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
+import user_img from '/src/Assets/img/avatar-2.jpg';
 
 const Review = () => {
     return (
@@ -35,7 +36,7 @@ const Review = () => {
 
                     <SwiperSlide>
                         <div id='card' className=' flex w-full gap-3 border shadow-md p-2 rounded-2xl'>
-                            <img src="/src/Assets/img/avatar-2.jpg" />
+                            <img src={user_img} />
 
                             <div className='leading-5 mt-2'>
                                 <p className='font-semibold'>Sarah J.</p>
@@ -48,7 +49,7 @@ const Review = () => {
 
                     <SwiperSlide>
                         <div id='card' className=' flex gap-3 border shadow-md p-2 rounded-2xl'>
-                            <img src="/src/Assets/img/avatar-2.jpg" />
+                            <img src={user_img} />
 
                             <div className='leading-5 mt-2'>
                                 <p className='font-semibold'>Sarah J.</p>
@@ -61,7 +62,7 @@ const Review = () => {
 
                     <SwiperSlide>
                         <div id='card' className=' flex gap-3 border shadow-md p-2 rounded-2xl'>
-                            <img src="/src/Assets/img/avatar-2.jpg" />
+                            <img src={user_img} />
 
                            <div className='leading-5 mt-2'>
                                 <p className='font-semibold'>Sarah J.</p>
@@ -74,7 +75,7 @@ const Review = () => {
 
                     <SwiperSlide>
                         <div id='card' className=' flex gap-3 border shadow-md p-2 rounded-2xl'>
-                            <img src="/src/Assets/img/avatar-2.jpg" />
+                            <img src={user_img} />
 
                             <div className='leading-5 mt-2'>
                                 <p className='font-semibold'>Sarah J.</p>

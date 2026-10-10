@@ -4,6 +4,12 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
+import p7 from '/src/Assets/img/p7.jpg';
+import p5 from '/src/Assets/img/p5.jpg';
+import p3 from '/src/Assets/img/p3.jpg';
+import p4 from '/src/Assets/img/p4.jpg';
+import p8 from '/src/Assets/img/p8.jpg';
+import p6 from '/src/Assets/img/p6.jpg';
 
 
 const Products = () => {
@@ -35,7 +41,7 @@ const Products = () => {
         {/* card 1 */}
         <SwiperSlide>
           <div id='card' className='w-full border shadow-md p-2 rounded-2xl'>
-            <img src="/src/Assets/img/p7.jpg"
+            <img src={p7}
               className='w-full h-40 object-fill rounded-2xl' />
 
             <div className='leading-4 mt-2'>
@@ -60,7 +66,7 @@ const Products = () => {
         <SwiperSlide>
           <div id='card' className='w-full p-2 border shadow-md rounded-2xl'>
 
-            <img src="/src/Assets/img/p5.jpg"
+            <img src={p5}
               className='w-full h-40 object-contain rounded-2xl' />
 
             <div className='leading-4 mt-2'>
@@ -86,7 +92,7 @@ const Products = () => {
         <SwiperSlide>
           <div id='card' className='w-full shadow-md  p-2 border rounded-2xl'>
 
-            <img src="/src/Assets/img/p3.jpg"
+            <img src={p3}
               className='object-cover rounded-2xl' />
 
             <div className='leading-4 mt-2'>
@@ -112,7 +118,7 @@ const Products = () => {
         <SwiperSlide>
           <div id='card' className='shadow-md  p-2 border rounded-2xl'>
 
-            <img src="/src/Assets/img/p4.jpg"
+            <img src={p4}
               className=' object-fill rounded-2xl' />
 
             <div className='leading-3 mt-2'>
@@ -138,7 +144,7 @@ const Products = () => {
         <SwiperSlide>
           <div id='card' className='shadow-md  p-2 border rounded-2xl'>
 
-            <img src="/src/Assets/img/p8.jpg"
+            <img src={p8}
               className=' object-fill rounded-2xl' />
 
             <div className='leading-3 mt-2'>
@@ -165,7 +171,7 @@ const Products = () => {
         <SwiperSlide>
           <div id='card' className='shadow-md  p-2 border rounded-2xl'>
 
-            <img src="/src/Assets/img/p6.jpg"
+            <img src={p6}
               className=' object-fill rounded-2xl' />
 
             <div className='leading-3 mt-2'>
