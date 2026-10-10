@@ -2,7 +2,6 @@ import React from 'react'
 import Header from '../Share/Navbar/Header';
 import Footer from '../Share/Footer/Footer';
 import MainSlider from '../Component/Home/MainSlider';
-import Products from '../Component/Home/Products';
 import Product from '../Component/Shop/Product';
 
 const ShopPage = () => {
@@ -11,7 +10,6 @@ const ShopPage = () => {
       <Header/>
 
       <MainSlider/>
-      {/* <Products/> */}
       <Product/>
 
 

@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Menu } from 'lucide-react'
-import { NavLink } from 'react-router';
+import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
 

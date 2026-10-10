@@ -1,6 +1,6 @@
 import React from 'react'
 import HomePage from './Pages/HomePage'
-import { Routes, Route } from 'react-router'
+import { Routes, Route } from 'react-router-dom'
 import ShopPage from './Pages/ShopPage'
 
 const App = () => {
