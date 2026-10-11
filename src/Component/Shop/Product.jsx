@@ -1,5 +1,14 @@
 import React from 'react'
 import { ShoppingCart } from 'lucide-react';
+import shoe from '/src/Assets/img/shoe4.jpg';
+import shoes from '/src/Assets/img/shoe2.jpg';
+import sandal from '/src/Assets/img/p7.jpg';
+import sandals from '/src/Assets/img/product5.jpg';
+import Lightweight_sandals from '/src/Assets/img/product3.jpg';
+import Lightweight_sandal from '/src/Assets/img/product4.jpg';
+import Lw_sandals from '/src/Assets/img/product1.jpg';
+import casual_sandal from '/src/Assets/img/product2.jpg';
+
 
 const products = [
   {
@@ -7,7 +16,7 @@ const products = [
     name: "Premium Quality White sandals",
     price: 79.99,
     oldPrice: 99.99,
-    image: "/src/Assets/img/shoe4.jpg",
+    image: {shoe},
     rating: 4,
     reviews: 1234,
   },
@@ -16,7 +25,7 @@ const products = [
     name: "Classic Black Sandals",
     price: 59.99,
     oldPrice: 79.99,
-    image: "/src/Assets/img/shoe2.jpg",
+    image: {shoes},
     rating: 5,
     reviews: 856,
   },
@@ -25,7 +34,7 @@ const products = [
     name: "Casual Running Sandals",
     price: 69.99,
     oldPrice: 89.99,
-    image: "/src/Assets/img/shoe4.jpg",
+    image: {shoe},
     rating: 4,
     reviews: 642,
   },
@@ -34,7 +43,7 @@ const products = [
     name: "Sporty Training Sandals",
     price: 49.99,
     oldPrice: 69.99,
-    image: "/src/Assets/img/p7.jpg",
+    image: {sandal},
     rating: 4,
     reviews: 921,
   },
@@ -43,7 +52,7 @@ const products = [
     name: "Lightweight Walking Sandals",
     price: 54.99,
     oldPrice: 74.99,
-    image: "/src/Assets/img/p7.jpg",
+    image: {sandal},
     rating: 5,
     reviews: 478,
   },
@@ -52,7 +61,7 @@ const products = [
     name: "Modern Casual Sandals",
     price: 64.99,
     oldPrice: 84.99,
-    image: "/src/Assets/img/product5.jpg",
+    image: {sandals},
     rating: 4,
     reviews: 735,
   },
@@ -62,7 +71,7 @@ const products = [
     name: "Lightweight Walking Sandals",
     price: 54.99,
     oldPrice: 74.99,
-    image: "/src/Assets/img/product3.jpg",
+    image: {Lightweight_sandals},
     rating: 5,
     reviews: 478,
   },
@@ -71,7 +80,7 @@ const products = [
     name: "Modern Casual Sneakers",
     price: 64.99,
     oldPrice: 84.99,
-    image: "/src/Assets/img/product4.jpg",
+    image: {Lightweight_sandal},
     rating: 4,
     reviews: 735,
   },
@@ -81,7 +90,7 @@ const products = [
     name: "Lightweight Walking Sandals",
     price: 54.99,
     oldPrice: 74.99,
-    image: "/src/Assets/img/product1.jpg",
+    image: {Lw_sandals},
     rating: 5,
     reviews: 478,
   },
@@ -90,7 +99,7 @@ const products = [
     name: "Modern Casual Sandals",
     price: 64.99,
     oldPrice: 84.99,
-    image: "/src/Assets/img/product2.jpg",
+    image:{casual_sandal},
     rating: 4,
     reviews: 735,
   },
@@ -104,7 +113,7 @@ const Product = () => {
     <div className=' w-full grid lg:grid-cols-5 px-5 lg:gap-10 grid-cols-1 gap-4 p-3'>
       {products.map((item) =>
         <div className='shadow-md p-2 rounded-2xl flex flex-col justify-between'>
-          <img src={`${import.meta.env.BASE_URL}${item.image}`}
+          <img src={item.image}
             className='rounded-2xl w-full object-cover' />
 
           <div className='leading-4 mt-2'>
