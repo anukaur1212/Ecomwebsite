@@ -12,7 +12,6 @@ const ShopPage = () => {
       <MainSlider/>
       <Product/>
 
-
       <Footer/>
     </div>
   )
