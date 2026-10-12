@@ -9,32 +9,28 @@ import img2 from '/src/Assets/img/img2.jpg';
 const MainSlider = () => {
 
   return (
-<>
-<div className='w-full p-2 bg-gray-100'>
-    <div>
-     <Swiper
-        spaceBetween={30}
-        pagination={{
-          clickable: true,
-        }}
-        navigation={true}
-        modules={[Pagination]}
-        className="mySwiper">
+    <>
+      <div className='w-full p-2 bg-gray-100'>
+        <Swiper
+          spaceBetween={30}
+          pagination={{
+            clickable: true,
+          }}
+          navigation={true}
+          modules={[Pagination]}
+          className="mySwiper">
 
-        <SwiperSlide>
+          <SwiperSlide>
             <img src={img1} alt="img" />
-        </SwiperSlide>
+          </SwiperSlide>
 
-        <SwiperSlide>
+          <SwiperSlide>
             <img src={img2} alt="img" />
-        </SwiperSlide>
-      </Swiper>
-    </div>
+          </SwiperSlide>
+        </Swiper>
 
-
-
-</div>
-</>
+      </div>
+    </>
   )
 }
 

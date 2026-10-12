@@ -121,8 +121,7 @@ const Products = () => {
 
                   <button
                     type="button"
-                    className="bg-green-900 w-fit p-2 rounded-full">
-
+                    className="bg-green-900 w-fit p-2 rounded">
                     <ShoppingCart size={20} color="white" />
                   </button>
                 </div>
@@ -134,6 +133,7 @@ const Products = () => {
       </Swiper>
 
     </div>
+
   );
 };
 

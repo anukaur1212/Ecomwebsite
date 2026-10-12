@@ -13,5 +13,3 @@ const ChildrenP = ({ children, heading }) => {
 export default ChildrenP
 
 
-
-

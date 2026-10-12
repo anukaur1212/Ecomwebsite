@@ -6,6 +6,8 @@ import Products from '../Component/Home/Products';
 import Benefits from '../Component/Home/Benefits';
 import Circlecards from '../Component/Home/Circlecards';
 import ReviewCard from '../Component/Home/ReviewCard';
+import ProductCard from '../Share/Component/ProductCard';
+import ProductParent from '../Component/Home/ProductParent';
 
 const HomePage = () => {
   return (
@@ -17,7 +19,11 @@ const HomePage = () => {
       {/* Home-main Section */}
       <MainSlider />
       <Circlecards/>
-      <Products />
+      {/* <Products /> */}
+      {/* <ProductCard/> */}
+
+      <ProductParent/>
+     
       <ReviewCard/>
       <Benefits />
 
