@@ -14,7 +14,7 @@ const Circlecards = () => {
                 <CircleCard heading="Books" icon={<BookText size={40}/>} bg="bg-sky-200" />
                 <CircleCard heading="Sports" icon={<Volleyball size={40}/>}  bg="bg-orange-200"/>
                 <CircleCard  heading="Pets" icon={<Cat size={40}/>}  bg="bg-blue-200"/>
-                <CircleCard  heading="Office" icon={<BriefcaseBusiness size={40}/>}  bg="bg-orange-200"/>
+                <CircleCard  heading="Office" icon={<BriefcaseBusiness size={40}/>} bg="bg-orange-200"/>
 
             </div>
 

@@ -1,11 +1,15 @@
 import React from 'react'
+import FooterCard from '../Component/FooterCard';
 
 const Footer = () => {
+
+    const foot = "grid grid-cols-2 lg:grid-cols-5 p-2 lg:p-4";
+    const copyright = "grid grid-cols-2 lg:grid-cols-4 px-4  py-2 gap-2 border-t "
+
     return (
         <>
-            <div className='flex flex-col bg-green-950 text-white pt-5'>
-
-                <div className='grid grid-cols-2 lg:grid-cols-5 p-2 lg:p-4'>
+            <FooterCard>
+               <div className={foot}>
 
                     <div className='lg:p-4 text-center'>
                         <h2 className='flex flex-col'>Viva
@@ -13,7 +17,7 @@ const Footer = () => {
                         </h2>
                         <p className='text-sm'>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             Hic voluptatibus placeat rerum? Vel, explicabo.</p>
-                    </div>
+                    </div> 
 
                     <div className=' lg:p-4'>
                         <ul className='flex flex-col text-justify'>
@@ -38,7 +42,7 @@ const Footer = () => {
 
                     <div className=' lg:p-4'>
                         <ul className='flex flex-col text-justify'>
-                            <li><h5>Company</h5></li> 
+                            <li><h5>Company</h5></li>
                             <li>About Us</li>
                             <li>Careers</li>
                             <li>Blog</li>
@@ -59,13 +63,14 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <div className='grid grid-cols-2 lg:grid-cols-4 px-4  py-2 gap-2 border-t '>
+                <div className={copyright}>
                     <p>@Viva 2026 All rights reserved</p>
                     <p>Privacy Policy</p>
                     <p>Terms of Service </p>
                     <p>Cookie Policy</p>
                 </div>
-            </div>
+                
+            </FooterCard>
         </>
     )
 }
