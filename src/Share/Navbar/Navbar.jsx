@@ -24,8 +24,10 @@ const Navbar = () => {
 
             <ul className={`${menuOpen ? "flex" : "hidden"} 
              lg:flex flex-col sm:flex-row lg:w-230 sm:gap-3 text-xl font-semibold text-green-950 justify-between`}>
-                <li><NavLink className="nav" to="/">Home</NavLink> </li>                
-                <li><NavLink className="nav" to="/shop">Shop</NavLink> </li>
+                <li><NavLink className={({ isActive }) => isActive ? "nav active" : "nav"} 
+                to="/">Home</NavLink> </li>
+                <li><NavLink className={({isActive})=> isActive ? "nav active" : "nav"} 
+                to="/shop">Shop</NavLink> </li>
                 <li>Deals</li>
                 <li>New Arrivals</li>
                 <li>Brands</li>

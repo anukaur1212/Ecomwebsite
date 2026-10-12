@@ -8,6 +8,7 @@ import Lightweight_sandals from '/src/Assets/img/product3.jpg';
 import Lightweight_sandal from '/src/Assets/img/product4.jpg';
 import Lw_sandals from '/src/Assets/img/product1.jpg';
 import casual_sandal from '/src/Assets/img/product2.jpg';
+import ChildrenP from './ChildrenP';
 
 
 const products = [
@@ -110,6 +111,7 @@ const products = [
 const Product = () => {
   return (
 
+<>
     <div className=' w-full grid lg:grid-cols-5 px-5 lg:gap-10 grid-cols-1 gap-4 p-3'>
       {products.map((item) =>
         <div className='shadow-md p-2 rounded-2xl flex flex-col justify-between'>
@@ -133,7 +135,18 @@ const Product = () => {
           </div>
         </div>
       )}
+
+
+{/* calling components using children */}
+
+      {/* <ChildrenP>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, magni.
+      </ChildrenP> */}
+
+     
     </div>
+
+</>
   )
 
 }

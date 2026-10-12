@@ -6,10 +6,7 @@ import 'swiper/css/pagination';
 import img1 from '/src/Assets/img/img1.jpg';
 import img2 from '/src/Assets/img/img2.jpg';
 
-
 const MainSlider = () => {
-
-
 
   return (
 <>

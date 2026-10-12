@@ -150,9 +150,14 @@
   padding: 5px;
 }
 
-.nav{
+.nav {
   text-decoration: none;
-  color: #032E15;
+  color: black;
+}
+
+.nav.active {
+  color: green;
+  border-bottom: 2px solid green;
 }
 
 .Product-Swiper {
@@ -172,4 +177,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.container{
+  color: red;
 }
