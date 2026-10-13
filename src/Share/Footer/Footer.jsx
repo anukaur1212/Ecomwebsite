@@ -1,65 +1,57 @@
 import React from 'react'
-import FooterCard from '../Component/FooterCard';
 
 const Footer = () => {
 
-    const foot = "grid grid-cols-2 lg:grid-cols-5 p-2 lg:p-4";
-    const copyright = "grid grid-cols-2 lg:grid-cols-4 px-4  py-2 gap-2 border-t "
+    const copyright = "grid grid-cols-2 lg:grid-cols-4 px-4 m-3 py-2 gap-2 border-t";
+
+    const footerlist = [
+        {
+            title: "Shop",
+            items: ["All Categories", "Discounts", "Gift Cards", "Brands", "Offers"],
+        },
+        {
+            title: "Customer Service",
+            items: ["FAQs", "Shipping Policy", "Returns & Refunds", "Privacy Policy"],
+        },
+        {
+            title: "Company",
+            items: ["About us", "Carrers", "Affiliate Programs", "Sustainability", "Blog"],
+        },
+        {
+            title: "Company",
+            items: ["About us", "Carrers", "Affiliate Programs", "Sustainability", "Blog"],
+        },
+
+    ];
 
     return (
-        <>
-            <FooterCard>
-               <div className={foot}>
 
-                    <div className='lg:p-4 text-center'>
+        <>
+
+            <div className='flex flex-col bg-green-950 text-white pt-5'>
+
+                <div className="flex flex-col lg:flex-row w-full gap-3 px-3">
+
+                    <div className='lg:p-4 text-center border-b-2 lg:border-none lg:w-1/3'>
                         <h2 className='flex flex-col'>Viva
                             <span className='text-sm'> LIVE BETTER </span>
                         </h2>
                         <p className='text-sm'>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             Hic voluptatibus placeat rerum? Vel, explicabo.</p>
-                    </div> 
-
-                    <div className=' lg:p-4'>
-                        <ul className='flex flex-col text-justify'>
-                            <li><h5>Shop</h5></li>
-                            <li>All Categories</li>
-                            <li>Discounts</li>
-                            <li>Gift Cards</li>
-                            <li>Brands</li>
-                            <li>Offers</li>
-                        </ul>
                     </div>
 
-                    <div className='lg:p-4'>
-                        <ul className='flex flex-col text-justify'>
-                            <li><h5>Customer Service</h5></li>
-                            <li>Track Order</li>
-                            <li>Returns & Refunds</li>
-                            <li>Shipping Info</li>
-                            <li>FAQ</li>
-                        </ul>
-                    </div>
+                    <div className="grid grid-cols-2 lg:grid-cols-5 mt-2 w-full text-left">
+                        {footerlist.map((section) => (
+                            <div key={section.title} className=''>
+                                <h3>{section.title}</h3>
 
-                    <div className=' lg:p-4'>
-                        <ul className='flex flex-col text-justify'>
-                            <li><h5>Company</h5></li>
-                            <li>About Us</li>
-                            <li>Careers</li>
-                            <li>Blog</li>
-                            <li>Affiliate Program</li>
-                            <li>Sustainability</li>
-                        </ul>
-                    </div>
-
-                    <div className=' lg:p-4 hidden lg:flex'>
-                        <ul className='flex flex-col text-justify'>
-                            <li><h5>Contact</h5></li>
-                            <li>Instagram</li>
-                            <li>Linked In</li>
-                            <li>Twitter</li>
-                            <li>Affiliate Program</li>
-                            <li>Sustainability</li>
-                        </ul>
+                                <ul className='p-2 text-left'>
+                                    {section.items.map((item) => (
+                                        <li key={item}>{item}</li>
+                                    ))}
+                                </ul>
+                            </div>
+                        ))}
                     </div>
                 </div>
 
@@ -69,10 +61,11 @@ const Footer = () => {
                     <p>Terms of Service </p>
                     <p>Cookie Policy</p>
                 </div>
-                
-            </FooterCard>
+            </div>
+
         </>
     )
 }
 
 export default Footer
+

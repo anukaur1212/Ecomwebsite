@@ -8,15 +8,18 @@ import Circlecards from '../Component/Home/Circlecards';
 import ReviewCard from '../Component/Home/ReviewCard';
 import ProductCard from '../Share/Component/ProductCard';
 import ProductParent from '../Component/Home/ProductParent';
+import Layout from '../Share/Component/Layout';
 
 const HomePage = () => {
   return (
     <div>
 
+     
       {/* Header Section */}
       <Adds />
+      <Layout>
+     
 
-      {/* Home-main Section */}
       <MainSlider />
       <Circlecards/>
       {/* <Products /> */}
@@ -28,7 +31,9 @@ const HomePage = () => {
       <Benefits />
 
       {/* Footer Section */}
-      <Footer />
+      </Layout>
+  
+
     </div>
   )
 }

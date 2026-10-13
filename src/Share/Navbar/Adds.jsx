@@ -14,7 +14,7 @@ const Adds = () => {
         <p className='w-full sm:w-70'><span className='flex gap-2' > <Lock /> Secure Payments </span></p>
       </div>
 
-<Header/>
+{/* <Header/> */}
 
     </>
   );
