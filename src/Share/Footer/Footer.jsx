@@ -7,7 +7,7 @@ const Footer = () => {
     const footerlist = [
         {
             title: "Shop",
-            items: ["All Categories", "Discounts", "Gift Cards", "Brands", "Offers"],
+            items: ["All Categories", "Discounts", "Gift Cards", "Brands"],
         },
         {
             title: "Customer Service",
@@ -15,12 +15,16 @@ const Footer = () => {
         },
         {
             title: "Company",
-            items: ["About us", "Carrers", "Affiliate Programs", "Sustainability", "Blog"],
+            items: ["About us", "Carrers", "Affiliate Programs", "Sustainability"],
         },
         {
-            title: "Company",
-            items: ["About us", "Carrers", "Affiliate Programs", "Sustainability", "Blog"],
+            title: "Contact",
+            items: ["About us", "Carrers", "Affiliate Programs", "Sustainability"],
         },
+        //  {
+        //     title: "Quick Links",
+        //     items: ["", "Carrers", "Affiliate Programs", "Sustainability", "Blog"],
+        // },
 
     ];
 
@@ -30,7 +34,7 @@ const Footer = () => {
 
             <div className='flex flex-col bg-green-950 text-white pt-5'>
 
-                <div className="flex flex-col lg:flex-row w-full gap-3 px-3">
+                <div className="flex flex-col lg:flex-row  w-full gap-4 px-3">
 
                     <div className='lg:p-4 text-center border-b-2 lg:border-none lg:w-1/3'>
                         <h2 className='flex flex-col'>Viva
@@ -40,10 +44,10 @@ const Footer = () => {
                             Hic voluptatibus placeat rerum? Vel, explicabo.</p>
                     </div>
 
-                    <div className="grid grid-cols-2 lg:grid-cols-5 mt-2 w-full text-left">
+                    <div className="grid grid-cols-2 lg:grid-cols-4 px-3 w-full text-left gap-3">
                         {footerlist.map((section) => (
-                            <div key={section.title} className=''>
-                                <h3>{section.title}</h3>
+                            <div key={section.title}>
+                                <h5>{section.title}</h5>
 
                                 <ul className='p-2 text-left'>
                                     {section.items.map((item) => (

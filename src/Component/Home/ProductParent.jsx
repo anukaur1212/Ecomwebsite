@@ -66,8 +66,8 @@ const ProductParent = () => {
                     768: { slidesPerView: 3 },
                     1024: { slidesPerView: 4 },
                 }}
-                className="Hero-Swiper w-full"
-            >
+                className="Hero-Swiper">
+
                 {products.map((product) => (
                     <SwiperSlide key={product.name}>
                         <ProductCard

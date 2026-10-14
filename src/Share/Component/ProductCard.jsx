@@ -10,7 +10,7 @@ const ProductCard = ({ name, price, oldPrice, image, reviews, rating, icons }) =
                         alt={name}
                         className="rounded-2xl" />
 
-                    <div className="leading-3 mt-2 text-left">
+                    <div className="leading-2 mt-2 text-left">
                         <p className="font-semibold text-xl text-gray-700">{name}</p>
                         <p>⭐⭐⭐⭐⭐</p>
                         <div className="flex justify-between items-center mt-2">

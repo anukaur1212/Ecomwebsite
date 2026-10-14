@@ -64,7 +64,6 @@
 }
 
 .Hero-Swiper .swiper-slide #card {
-
   height: 100%;
   width: 100%;
   display: flex;
@@ -83,74 +82,55 @@
 }
 
 
+/* REVIEW SECTION SWIPER */
+
 .review-Swiper {
+  width: 100%;
   margin: 0;
 }
 
-.review-Swiper .swiper {
+.review-Swiper .swiper-slide {
+  height: auto;
+  box-sizing: border-box;
+}
+
+.review-Swiper .card {
   width: 100%;
-  /* background-color: aquamarine; */
+  min-width: 0;
+  height: 200px;
+  box-sizing: border-box;
+  text-align: left;
 }
 
-.review-Swiper .swiper-slide {
-  height: 230px;
-  padding: 3;
+/* Review component's card */
+.review-Swiper .card > div
+{
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
 }
 
-@media (min-width:768px) {
-.review-Swiper .swiper-slide {
-  height: 230px;
-  padding: 1;
-}}
-
-
-.review-Swiper .swiper-slide img {
-  height: 50px;
+/* Images */
+.review-Swiper img {
   width: 50px;
-  object-fit: fill;
+  height: 50px;
+  object-fit: cover;
   border-radius: 50%;
-  display: none;
+  flex-shrink: 0;
 }
 
-
-@media (min-width:768px) {
-  .review-Swiper .swiper-slide img {
-    height: 80px;
-    width: 80px;
-    object-fit: fill;
-    border-radius: 50%;
-    display: flex;
-  }
-}
-
-  .review-Swiper .swiper-slide #card {
-    height: 200px;
-    width: 265px;
-    margin: 0;
-    /* border: 2px solid; */
-    text-align: left;
-  }
-
-
-@media (min-width:768px) {
-  .review-Swiper .swiper-slide #card {
-    height: 200px;
-    width: 400px;
-    display: flex;
-    text-align: left;
-  }
-}
-
+/* Navigation arrows */
 .review-Swiper .swiper-button-next,
 .review-Swiper .swiper-button-prev {
   width: 30px;
   height: 30px;
   background: green;
   border-radius: 50%;
-  color: rgb(5, 69, 5);
-  padding: 5px;
+  color: white;
 }
 
+
+/* Navbar styling */
 .nav {
   text-decoration: none;
   color: black;
@@ -161,6 +141,8 @@
   border-bottom: 2px solid green;
 }
 
+
+/* Product list styling */
 .Product-Swiper {
   width: 100%;
   height: 100%;
@@ -172,9 +154,6 @@
   text-align: center;
   font-size: 18px;
   background: #c5bfbf;
-  height: calc((100% - 30px) / 2) !important;
-
-  /* Center slide text vertically */
   display: flex;
   justify-content: center;
   align-items: center;
