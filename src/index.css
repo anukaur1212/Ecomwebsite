@@ -46,15 +46,15 @@
   margin: 0;
 }
 
-.Hero-Swiper .swiper {
+ .swiper {
   width: 100%;
+    /* padding: 6px; */
 }
 
 .Hero-Swiper .swiper-slide {
   height: 500px;
   padding: 4px;
   /* border: 1px solid blue; */
-
 }
 
 .Hero-Swiper .swiper-slide img {

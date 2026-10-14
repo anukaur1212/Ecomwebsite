@@ -14,20 +14,15 @@ const HomePage = () => {
      
       {/* Header Section */}
       <Adds />
-      <Layout>
      
+      <Layout>
 
       <MainSlider />
       <Circlecards/>
-      {/* <Products /> */}
-      {/* <ProductCard/> */}
-
-      <ProductParent/>
-     
+      <ProductParent/>     
       <Review/>
       <Benefits />
 
-      {/* Footer Section */}
       </Layout>
   
 

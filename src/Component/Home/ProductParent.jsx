@@ -50,7 +50,7 @@ const ProductParent = () => {
     ];
 
     return (
-        <div className="rounded-2xl flex flex-col px-4 bg-white gap-3">
+        <div className="rounded-2xl flex flex-col bg-white px-3 gap-3">
             <h3 className="font-serif mt-2 hidden lg:flex">
                 Top Picks For You ✨
             </h3>
@@ -69,7 +69,7 @@ const ProductParent = () => {
                 className="Hero-Swiper">
 
                 {products.map((product) => (
-                    <SwiperSlide key={product.name}>
+                    <SwiperSlide key={product.id}>
                         <ProductCard
                             {...product}
                             icons={<ShoppingCart size={28} color="white" />}

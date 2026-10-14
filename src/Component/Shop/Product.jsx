@@ -112,9 +112,9 @@ const Product = () => {
   return (
 
 <>
-    <div className=' w-full grid lg:grid-cols-5 px-5 lg:gap-10 grid-cols-1 gap-4 p-3'>
-      {products.map((item) =>
-        <div className='shadow-md p-2 rounded-2xl flex flex-col justify-between'>
+    <div className=' w-full grid lg:grid-cols-5 px-5 lg:gap-10 grid-cols-1 gap-4 p-5'>
+      {products.map((item,id) =>
+        <div key={item.id} className='shadow-md p-2 rounded-2xl flex flex-col justify-between'>
           <img src={item.image}
             className='rounded-2xl w-full object-cover' />
 
