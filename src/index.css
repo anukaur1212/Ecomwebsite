@@ -1,10 +1,15 @@
 @import "tailwindcss";
 
-* {
-  margin: 0;
-  padding: 0;
-}
+/* :root {
+  --primary-color: #032E15;
+  --secondary-color: #f3f4f6;
+  --text-color: #111827;
+  --border-color: #d1d5db;
+  --main-padding: 16px;
+} */
 
+
+/* main swiper styling */
 .swiper {
   width: 90%;
   height: 100%;
@@ -38,10 +43,12 @@
   object-fit: cover;
   display: flex;
   align-items: center;
-  border-radius: 30px;
+  border-radius: 10px;
 }
 
 
+
+/* Hero swiper styling */
 .Hero-Swiper {
   margin: 0;
 }
@@ -127,6 +134,7 @@
   background: green;
   border-radius: 50%;
   color: white;
+  padding: 8px;
 }
 
 

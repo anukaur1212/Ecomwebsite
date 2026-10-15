@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { ShoppingCart } from 'lucide-react';
-import ProductCard from '../../Share/Component/ProductCard';
+import { SwiperProductCard } from '../../Share/Component/SwiperProductCard';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from 'swiper/modules';
@@ -70,7 +70,7 @@ const ProductParent = () => {
 
                 {products.map((product) => (
                     <SwiperSlide key={product.id}>
-                        <ProductCard
+                        <SwiperProductCard
                             {...product}
                             icons={<ShoppingCart size={28} color="white" />}
                         />

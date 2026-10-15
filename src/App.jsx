@@ -2,6 +2,7 @@ import React from 'react'
 import HomePage from './Pages/HomePage'
 import { Routes, Route } from 'react-router-dom'
 import ShopPage from './Pages/ShopPage'
+import Layout from './Share/Component/Layout'
 
 const App = () => {
   return (
@@ -13,8 +14,12 @@ const App = () => {
       {/* <HomePage/> */}
 
       <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/shop" element={<ShopPage />} />
+        
+        <Route element={<Layout />}>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/shop" element={<ShopPage />} />
+        </Route>
+
       </Routes>
 
 

@@ -4,7 +4,6 @@ import MainSlider from '../Component/Home/MainSlider'
 import Benefits from '../Component/Home/Benefits';
 import Circlecards from '../Component/Home/Circlecards';
 import ProductParent from '../Component/Home/ProductParent';
-import Layout from '../Share/Component/Layout';
 import Review from '../Component/Home/Review';
 
 const HomePage = () => {
@@ -13,9 +12,9 @@ const HomePage = () => {
 
      
       {/* Header Section */}
-      <Adds />
      
-      <Layout>
+     
+      {/* <Layout> */}
 
       <MainSlider />
       <Circlecards/>
@@ -23,7 +22,7 @@ const HomePage = () => {
       <Review/>
       <Benefits />
 
-      </Layout>
+      {/* </Layout> */}
   
 
     </div>
