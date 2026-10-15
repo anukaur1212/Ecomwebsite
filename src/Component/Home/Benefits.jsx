@@ -5,7 +5,9 @@ import BenefitCard from '../../Share/Component/BenefitCard';
 const Facility = () => {
 
     return (
-        <div className='mt-3 grid grid-cols-2 md:grid-cols-4 w-full bg-white rounded-2xl px-4 gap-4 py-4'>
+        <div className='my-4 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 w-full
+         bg-white rounded-2xl px-4 gap-4 py-4'>
+
             <BenefitCard title="Free Shipping" para="On orders over $49"
                 icon={<Truck size={60} color='grey' />} />
 

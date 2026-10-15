@@ -6,8 +6,7 @@ import React from 'react'
 export const SwiperProductCard = ({ name, price, oldPrice, image, reviews, rating, icons }) => {
     return (
 
-
-        <div className=" p-3 rounded-2xl border h-100">
+        <div className=" p-3 rounded-2xl border h-full hover:shadow-md">
             <img src={image}
                 alt={name} />
 

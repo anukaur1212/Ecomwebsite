@@ -3,16 +3,21 @@ import React from 'react'
 const ReviewCard = ({ img, name, review }) => {
     return (
 
-        <div className='flex gap-3 p-2'>
-            <img src={img} />
+        <>
 
-            <div className='leading-5 mt-2'>
-                <p className='font-semibold'>{name}</p>
-                <p>⭐⭐⭐⭐</p>
-                <p>{review}</p>
+            <div className='review-card'>
+                <div className='flex gap-3 p-2 '>
+                    <img src={img} />
+                    <p className='font-semibold'>{name}</p>
+                </div>
+
+                <div className='leading-6 p-2'>
+                    <p className='m-0'>⭐⭐⭐⭐</p>
+                    <p>{review}</p>
+                </div>
             </div>
-        </div>
 
+        </>
     )
 }
 

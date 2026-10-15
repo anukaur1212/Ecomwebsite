@@ -6,7 +6,7 @@ import Header from './Header';
 const Adds = () => {
   return (
     <>
-      <div className='flex justify-center align-items-center bg-green-950 text-white p-2.5 border-2 gap-4 w-full'>
+      <div className='flex justify-center align-items-center bg-green-950 text-white p-2.5 w-full'>
 
         <div className='p-2'>
           <p className='w-full sm:w-70'>
@@ -24,7 +24,7 @@ const Adds = () => {
 
         <div className='p-2'>
           <p className='w-full sm:w-70'>
-            <span className='flex gap-2 justify-center align-items-center' >
+            <span className='flex justify-center align-items-center gap-2' >
               <Lock /> Secure Payments
             </span>
           </p>
