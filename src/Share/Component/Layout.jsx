@@ -7,14 +7,17 @@ import Adds from '../Navbar/Adds'
 const Layout = () => {
     return (
         <>
-        
-         <Adds />
+
+            <Adds />
             <Header />
-            {/* <div> */}
-                {/* {children} */}
-                <Outlet/>
-            {/* </div> */}
-            <Footer/>
+            <div className='layout'>
+            {/* {children} */}
+
+            <Outlet />
+
+            </div>
+
+            <Footer />
 
         </>
     )

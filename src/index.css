@@ -1,5 +1,33 @@
 @import "tailwindcss";
 
+
+.layout {
+  /* border: 2px solid red; */
+  padding: 4px;
+}
+
+@media (min-width:768px) {
+
+  .layout {
+    /* border: 2px solid red; */
+    /* padding: 6px; */
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
+
+@media (min-width:1024px) {
+
+  .layout {
+    /* border: 2px solid red; */
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+
+
+
+
 /* main swiper styling */
 .swiper {
   width: 90%;
@@ -9,15 +37,15 @@
 }
 
 @media (min-width:768px) {
- .swiper {
-  width: 90%;
-  height: 100%;
-  border-radius: 30px;
-  margin-bottom: 30px;
+  .swiper {
+    width: 90%;
+    height: 100%;
+    border-radius: 30px;
+    margin-bottom: 30px;
   }
 }
 
-  .swiper-slide{
+.swiper-slide {
   text-align: center;
   font-size: 18px;
   display: flex;
@@ -27,7 +55,7 @@
   padding: 10px;
 }
 
-  .swiper-slide img {
+.swiper-slide img {
   display: block;
   width: 100%;
   height: 100%;
@@ -44,9 +72,9 @@
   margin: 0;
 }
 
- .swiper {
+.swiper {
   width: 100%;
-    /* padding: 6px; */
+  /* padding: 6px; */
 }
 
 .Hero-Swiper .swiper-slide {
@@ -66,7 +94,7 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  text-align:left;
+  text-align: left;
 }
 
 .Hero-Swiper .swiper-button-next,
@@ -101,8 +129,7 @@
 }
 
 /* Review component's card */
-.review-Swiper .card > div
-{
+.review-Swiper .card>div {
   width: 100%;
   height: 100%;
   box-sizing: border-box;
@@ -158,6 +185,6 @@
   align-items: center;
 }
 
-.container{
+.container {
   color: red;
 }

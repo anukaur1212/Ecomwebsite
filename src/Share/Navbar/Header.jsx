@@ -6,6 +6,8 @@ const Header = () => {
 
     const [user, setUser] = useState(false)
 
+    const [focused, setFocused] = useState(false)
+
     useEffect(() => {
 
         document.body.style.overflow = user ? "hidden" : "auto"
@@ -20,38 +22,61 @@ const Header = () => {
     return (
         <>
 
-            <div className='w-full sm:gap-4 gap-2 p-4 flex sm:flex-row flex-col justify-between text-center bg-gray-300 text-green-950'>
+            <div className='w-full sm:gap-4 gap-3 p-4 bg-gray-300 text-green-950
+            flex md:flex-row flex-col md:justify-between md:text-center md:items-center '>
 
-                {/* logo +search bar */}
-                <div className='flex w-1/2 justify-between'>
-                    {/* Logo */}
-                    <div className='w-full sm:w-1/6 justify-between'>
-                        <h2 className='flex flex-col'>Viva <span className='text-sm underline underline-offset-2'> LIVE BETTER </span></h2>
+                {/* logo + icons */}
+                    <div className='flex justify-between items-center w-full md:w-auto gap-4'>
+
+                        {/* Logo */}
+                        <div className='w-full md:w-auto justify-between'>
+                            <h2 className='flex flex-col'>Viva
+                                <span className='text-sm underline underline-offset-2'> 
+                            LIVE BETTER 
+                            </span>
+                            </h2>
+                        </div>
+
+                        {/* icons */}
+                        <div className='md:w-auto w-full flex justify-between md:hidden'>
+                                <UserRound className='cursor-pointer'
+                                    size={30}
+                                    onClick={() => setUser(true)} />
+                                <ShoppingCart size={30} />
+                                <Heart size={30} />
+                        </div>
                     </div>
 
                     {/* Search bar */}
-                    <form className='relative w-full sm:w-auto'>
-                        <input className='border-2 w-full sm:w-90 lg:w-[500px] p-2 rounded-2xl outline-none'
-                            type="text" placeholder='search product,brands and more..' />
+                    <form className='relative w-full md:w-auto'>
+                        <input className='border-2 w-full sm:w-full md:w-[500px] p-2 rounded-2xl outline-none'
+                            type="text" 
+                            placeholder='search product,brands and more..' 
+                            onFocus={()=> setFocused(true)} 
+                            onBlur={()=> setFocused(false)}/>
+                            
+
                         <button className='absolute right-0 top-0'>
                             <Search color='white' className='bg-green-950 p-2 rounded-r-2xl' size={43} />
                         </button>
                     </form>
 
-                </div>
 
                 {/* icons */}
-                <div className=' w-full sm:w-1/4 lg:flex'>
+                <div className=' w-full md:w-auto lg:flex hidden'>
                     <div className='flex gap-10 justify-center'>
                         <UserRound className='cursor-pointer'
                             size={30}
                             onClick={() => setUser(true)} />
-                        <ShoppingCart size={30} />
-                        <Heart size={30} />
+                        <ShoppingCart size={30} 
+                        className='cursor-pointer' />
+                        <Heart size={30} 
+                        className='cursor-pointer' />
                     </div>
                 </div>
 
             </div>
+
 
             <Navbar />
 
@@ -101,6 +126,9 @@ const Header = () => {
 
                 </div>
             )}
+
+
+         
 
         </>
     )

@@ -6,7 +6,8 @@ import Header from './Header';
 const Adds = () => {
   return (
     <>
-      <div className='flex justify-center align-items-center bg-green-950 text-white p-2.5 w-full'>
+      <div className='justify-center align-items-center bg-green-950 text-white p-2.5 w-full 
+      hidden lg:flex'>
 
         <div className='p-2'>
           <p className='w-full sm:w-70'>

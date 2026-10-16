@@ -50,7 +50,7 @@ const ProductParent = () => {
     ];
 
     return (
-        <div className="rounded-2xl flex flex-col bg-white px-3 gap-3">
+        <div className="rounded-2xl flex flex-col bg-white gap-3">
             <h3 className="font-serif mt-2 hidden lg:flex">
                 Top Picks For You ✨
             </h3>

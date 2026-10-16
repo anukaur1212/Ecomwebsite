@@ -35,7 +35,7 @@ const Review = () => {
 
     return (
 
-        <div className='mt-3 flex flex-col  gap-3 w-full bg-white p-3'>
+        <div className='mt-3 flex flex-col  gap-3 w-full bg-white'>
             <h2 className='font-serif hidden lg:flex'>Loved By Thousands ❤️</h2>
 
             <Swiper
