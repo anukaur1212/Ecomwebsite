@@ -11,7 +11,7 @@ const ReviewCard = ({ img, name, review }) => {
                     <p className='font-semibold'>{name}</p>
                 </div>
 
-                <div className='leading-6 p-2'>
+                <div className='leading-6 p-2 text-[16px] md:text-lg'>
                     <p className='m-0'>⭐⭐⭐⭐</p>
                     <p>{review}</p>
                 </div>
