@@ -10,11 +10,10 @@ const Layout = () => {
 
             <Adds />
             <Header />
+            
             <div className='layout'>
             {/* {children} */}
-
             <Outlet />
-
             </div>
 
             <Footer />

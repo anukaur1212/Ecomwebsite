@@ -13,22 +13,23 @@ const Review = () => {
         {
             img: user,
             name: 'Sarah J.',
-            review: "Lorem ipsum dolor sit amet, consectetur adipisicing eli Animi, rerum."
+            review: "Lorem ipsum dolor sit amet, consectetur adipisicing eli Animi rerum Lorem ipsum dolor sit amet, consectetur adipisicing eli Animi, rerum."
+            
         },
         {
             img: user,
             name: 'Sarah J.',
-            review: "Lorem ipsum dolor sit amet, consectetur adipisicing eli Animi, rerum."
+            review: "Lorem ipsum dolor sit amet, consectetur adipisicing eli Animi, rerum. Lorem ipsum dolor sit amet, consectetur adipisicing eli Animi, rerum."
         },
         {
             img: user,
             name: 'Sarah J.',
-            review: "Lorem ipsum dolor sit amet, consectetur adipisicing eli Animi, rerum."
+            review: "Lorem ipsum dolor sit amet, consectetur adipisicing eli Animi, rerum. Lorem ipsum dolor sit amet, consectetur adipisicing eli Animi, rerum."
         },
         {
             img: user,
             name: 'Sarah J.',
-            review: "Lorem ipsum dolor sit amet, consectetur adipisicing eli Animi, rerum."
+            review: "Lorem ipsum dolor sit amet, consectetur adipisicing eli Animi, rerum. Lorem ipsum dolor sit amet, consectetur adipisicing eli Animi, rerum."
         }
 
     ]
@@ -46,7 +47,7 @@ const Review = () => {
                 spaceBetween={12}
                 breakpoints={{
                     640: { slidesPerView: 1 },
-                    768: { slidesPerView: 3 },
+                    768: { slidesPerView: 2 },
                     1024: { slidesPerView: 3 },
                 }}
                 className="review-Swiper">

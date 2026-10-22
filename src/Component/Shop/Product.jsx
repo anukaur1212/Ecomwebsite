@@ -1,5 +1,5 @@
-import React from 'react'
-import { ShoppingCart } from 'lucide-react';
+import React, { useState } from 'react'
+import { Heart, ShoppingCart } from 'lucide-react';
 import shoe from '/src/Assets/img/shoe4.jpg';
 import shoes from '/src/Assets/img/shoe2.jpg';
 import sandal from '/src/Assets/img/p7.jpg';
@@ -8,10 +8,11 @@ import Lightweight_sandals from '/src/Assets/img/product3.jpg';
 import Lightweight_sandal from '/src/Assets/img/product4.jpg';
 import Lw_sandals from '/src/Assets/img/product1.jpg';
 import casual_sandal from '/src/Assets/img/product2.jpg';
+import { NavLink } from 'react-router-dom';
 
 
 
-const products = [
+export const products = [
   {
     id: 1,
     name: "Premium Quality White sandals",
@@ -108,26 +109,63 @@ const products = [
 
 ];
 
+
 const Product = () => {
+
+  const [like, setLike] = useState(() => JSON.parse(localStorage.getItem("wishlist")) || [])
+
+  const Liketoggle = (item) => {
+
+    setLike(prev => {
+      const updatedWishlist = prev.some(items => items.id === item.id)
+        ? prev.filter(items => items.id !== item.id)
+        : [...prev, item]
+
+
+      localStorage.setItem("wishlist", JSON.stringify(updatedWishlist));
+
+      return updatedWishlist;
+    })
+  }
+
+
   return (
 
     <>
       <div className='w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 p-3 sm:p-8
-       gap-4 my-4 md:my-2 lg:my-2'>
+        gap-4 my-4 md:my-2 lg:my-2'>
         {products.map((item, id) =>
+
           <div key={item.id} className='border w-full flex flex-col justify-between shadow-md p-2 sm:p-3 lg:p-4 rounded-2xl 
           hover:scale-102 transition'>
-            <img src={item.image}
-              className='rounded-2xl w-full h-80 sm:h-85' />
 
-            <div className='leading-4 mt-2'>
+
+            <NavLink to={`/detail/${item.id}`}>
+              <div className='relative'>
+                <img src={item.image}
+                  className='rounded-2xl w-full h-80 sm:h-85' />
+
+                <Heart onClick={(e) => {
+                  e.preventDefault()
+                  e.stopPropagation()
+                  Liketoggle(item)
+                }}
+
+                  size={30}
+                  color={like.some((items) => items.id === item.id) ? "red" : "gray"}
+                  fill={like.some((items) => items.id === item.id) ? "red" : "none"}
+                  className='absolute top-3 right-3' />
+              </div>
+            </NavLink>
+
+            <div className='leading-2 mt-3 ms-2.5'>
               <p className='font-semibold'>{item.name}</p>
               <p>⭐⭐⭐⭐</p>
 
               <div className='flex justify-between'>
                 <h4>
                   <span className='text-red-600'> {item.price} </span>
-                  <span><del className='text-gray-400 text-xl'>{item.oldPrice}</del></span>
+                  <span><del className='text-gray-400'>{item.oldPrice}</del></span>
                 </h4>
 
                 <div className='bg-green-900 w-fit p-2 rounded-full shrink-0'>
@@ -137,7 +175,6 @@ const Product = () => {
             </div>
           </div>
         )}
-
       </div>
 
     </>

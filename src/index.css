@@ -2,15 +2,12 @@
 
 
 .layout {
-  /* border: 2px solid red; */
   padding: 4px;
 }
 
 @media (min-width:768px) {
 
   .layout {
-    /* border: 2px solid red; */
-    /* padding: 6px; */
     padding-left: 8px;
     padding-right: 8px;
   }
@@ -19,13 +16,10 @@
 @media (min-width:1024px) {
 
   .layout {
-    /* border: 2px solid red; */
     padding-left: 12px;
     padding-right: 12px;
   }
 }
-
-
 
 
 /* main swiper styling */
@@ -99,17 +93,16 @@
 
 .Hero-Swiper .swiper-button-next,
 .Hero-Swiper .swiper-button-prev {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   background: #fff;
   border-radius: 50%;
   color: rgb(5, 69, 5);
-  padding: 5px;
+  padding: 8px;
 }
 
 
 /* REVIEW SECTION SWIPER */
-
 .review-Swiper {
   width: 100%;
   margin: 0;
@@ -118,14 +111,17 @@
 .review-Swiper .swiper-slide {
   height: auto;
   box-sizing: border-box;
+  /* border: 2px solid black; */
 }
 
 .review-Swiper .card {
   width: 100%;
   min-width: 0;
-  height: 200px;
+  min-height: 200px;
+  max-height: auto;
   box-sizing: border-box;
   text-align: left;
+  /* border: 2px solid; */
 }
 
 /* Review component's card */
@@ -156,16 +152,27 @@
 }
 
 
-/* Navbar styling */
+/* Mobile Navbar styling */
 .nav {
   text-decoration: none;
-  color: black;
+  color: #F3F4F6;
 }
 
 .nav.active {
-  color: green;
-  border-bottom: 2px solid green;
+  color: rgb(7, 7, 7);
 }
+
+
+/* Navbar styling */
+.navbar {
+  text-decoration: none;
+  color: rgb(6, 65, 6);
+}
+
+.navbar.active {
+  color: rgb(47, 121, 22);
+}
+
 
 
 /* Product list styling */

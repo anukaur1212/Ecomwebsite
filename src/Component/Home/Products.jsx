@@ -101,7 +101,7 @@ const Products = () => {
                 alt={item.name}
                 className="w-full h-40 object-contain rounded-2xl" />
 
-              <div className="leading-5 mt-2">
+              <div className="leading-1 mt-2">
                 <p className="font-semibold">{item.name}</p>
 
                 <p>

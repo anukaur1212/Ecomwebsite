@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { ShoppingCart } from 'lucide-react';
+import { Heart, ShoppingCart } from 'lucide-react';
 import { SwiperProductCard } from '../../Share/Component/SwiperProductCard';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -51,7 +51,7 @@ const ProductParent = () => {
 
     return (
         <div className="rounded-2xl flex flex-col bg-white gap-3">
-            <h3 className="font-serif mt-2 hidden lg:flex">
+            <h3 className="font-serif mt-2 hidden md:flex lg:flex">
                 Top Picks For You ✨
             </h3>
 
@@ -72,7 +72,7 @@ const ProductParent = () => {
                     <SwiperSlide key={product.id}>
                         <SwiperProductCard
                             {...product}
-                            icons={<ShoppingCart size={28} color="white" />}
+                            icons={<ShoppingCart size={28} color="white"/>}
                         />
                     </SwiperSlide>
                 ))}
