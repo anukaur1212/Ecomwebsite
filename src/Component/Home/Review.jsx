@@ -1,38 +1,14 @@
 import React from 'react'
-import { ShoppingCart } from 'lucide-react';
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
-import user from '/src/Assets/img/avatar-2.jpg';
 import ReviewCard from '../../Share/Component/ReviewCard';
+import ReviewData from '../../Share/Constant/ReviewData';
 
 const Review = () => {
 
-    const reviewList = [
-        {
-            img: user,
-            name: 'Sarah J.',
-            review: "Lorem ipsum dolor sit amet, consectetur adipisicing eli Animi rerum Lorem ipsum dolor sit amet, consectetur adipisicing eli Animi, rerum."
-            
-        },
-        {
-            img: user,
-            name: 'Sarah J.',
-            review: "Lorem ipsum dolor sit amet, consectetur adipisicing eli Animi, rerum. Lorem ipsum dolor sit amet, consectetur adipisicing eli Animi, rerum."
-        },
-        {
-            img: user,
-            name: 'Sarah J.',
-            review: "Lorem ipsum dolor sit amet, consectetur adipisicing eli Animi, rerum. Lorem ipsum dolor sit amet, consectetur adipisicing eli Animi, rerum."
-        },
-        {
-            img: user,
-            name: 'Sarah J.',
-            review: "Lorem ipsum dolor sit amet, consectetur adipisicing eli Animi, rerum. Lorem ipsum dolor sit amet, consectetur adipisicing eli Animi, rerum."
-        }
-
-    ]
+   const {reviewList} = ReviewData();
 
     return (
 

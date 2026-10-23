@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Heart, ShoppingCart, X } from 'lucide-react';
 import { useOutletContext } from 'react-router-dom';
 import PaymentCard from '../Share/Component/PaymentCard';
-import useWishList from '../Share/Component/CustomHook/useWishList';
+import useWishList from '../Share/CustomHook/useWishList';
 
 
 const CartPage = () => {

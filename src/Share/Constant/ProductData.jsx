@@ -33,7 +33,7 @@ export const products = [
     price: 69.99,
     oldPrice: 89.99,
     image: shoe,
-    rating: 4,
+    rating: 4, 
     reviews: 642,
   },
   {

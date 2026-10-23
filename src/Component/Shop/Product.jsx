@@ -1,31 +1,17 @@
 import React, { useState } from 'react'
 import { Heart, ShoppingCart } from 'lucide-react';
 import { NavLink, useOutletContext } from 'react-router-dom';
-import { products } from './ProductList';
-import useWishList from '../../Share/Component/CustomHook/useWishList';
+import { products } from '../../Share/Constant/ProductData';
+import useCartAdd from '../../Share/CustomHook/useCartAdd';
+import useWishList from '../../Share/CustomHook/useWishList';
 
 
 const Product = () => {
 
-  const {like,setLike, cart, setCart } = useOutletContext();
+  const { like, setLike, cart, setCart } = useOutletContext();
 
-  const {Liketoggle} = useWishList({like,setLike});
-
-  
-  const CartAdded = (product) => {
-    setCart(prev => {
-      const safeCart = prev.filter(item => item != null);
-      if (safeCart.some(item => item.id === product.id)) {
-        return safeCart;
-      }
-
-      const updatedCart = [...safeCart, product];
-      localStorage.setItem("cart", JSON.stringify(updatedCart));
-      return updatedCart;
-    });
-  };
-
-
+  const { Liketoggle } = useWishList({ like, setLike });
+  const {CartAdded} = useCartAdd({cart,setCart});
 
   return (
     <>
@@ -47,9 +33,12 @@ const Product = () => {
                   Liketoggle(item)
                 }}
                   size={30}
-                  color={like.some((items) => items.id === item.id) ? "red" : "gray"}
-                  fill={like.some((items) => items.id === item.id) ? "red" : "none"}
-                  className='absolute top-3 right-3' />
+                  className={`cursor-pointer hover:scale-115 transition-all duration-200 absolute top-3 right-3
+                  ${like.some(product => product.id === item.id)
+                      ? "text-red-500 fill-red-500"
+                      : "text-gray-400 fill-transparent hover:text-red-500 hover:fill-red-500"
+                    }`}
+                   />
               </div>
             </NavLink>
 
@@ -64,7 +53,7 @@ const Product = () => {
                 </h4>
 
                 <div className='bg-green-900 w-fit p-2 rounded-full
-                 shrink-0 cursor-pointer'>
+                 shrink-0 cursor-pointer hover:scale-115 transition-all duration-200'>
                   <ShoppingCart
                     onClick={() => CartAdded(item)}
                     size={20} color='white' />

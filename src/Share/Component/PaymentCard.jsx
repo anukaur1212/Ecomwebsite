@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import { useOutletContext } from 'react-router-dom';
-import { finalPayment } from './CustomHook/finalPayment';
+import { finalPayment } from '../CustomHook/finalPayment';
+
+
 
 const PaymentCard = () => {
 

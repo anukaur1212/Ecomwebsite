@@ -10,7 +10,8 @@ const Navbar = () => {
 
     return (
         <>
-            <div className='lg:sticky lg:z-100 lg:top-45 w-full flex flex-row items-center px-4 pb-3 bg-gray-300 uppercase'>
+            <div className='lg:sticky lg:z-100 lg:top-47 w-full flex flex-row
+             items-center px-4 pb-3 bg-gray-300 uppercase'>
 
                 <div className='bg-green-950 w-full lg:w-1/8 text-white px-3 py-2 rounded-2xl
                  flex justify-between items-center shrink-0'>

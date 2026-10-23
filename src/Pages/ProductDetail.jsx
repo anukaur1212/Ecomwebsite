@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Heart, MapPin, RotateCcw, Truck } from 'lucide-react';
 import { useOutletContext, useParams } from 'react-router-dom';
-import { products } from '../Component/Shop/ProductList';
+import { products } from '../Share/Constant/ProductData';
 
 
 const ProductDetail = () => {
