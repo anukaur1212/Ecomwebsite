@@ -6,7 +6,7 @@ import Header from './Header';
 const Adds = () => {
   return (
     <>
-      <div className='justify-center align-items-center bg-green-950 text-white p-2.5 w-full 
+      <div className='sticky top-0 z-100 justify-center align-items-center bg-green-950 text-white p-2.5 w-full 
       hidden lg:flex'>
 
         <div className='p-2'>

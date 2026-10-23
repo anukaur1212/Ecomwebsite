@@ -13,8 +13,7 @@ const App = () => {
   return (
     <div className='w-full h-full'>
 
-      <Routes>
-        
+      <Routes>      
         <Route element={<Layout />}>
           <Route path="/" element={<HomePage />} />
           <Route path="/shop" element={<ShopPage />} />

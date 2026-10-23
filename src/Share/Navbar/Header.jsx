@@ -3,11 +3,10 @@ import { ValidateEmail, ValidatePassword } from '../Validation/Validation';
 import LoginModel from './Model/LoginModel';
 import { Search, UserRound, Heart, ShoppingCart, X } from 'lucide-react';
 import Navbar from './Navbar';
-import WishlistPage from '../../Pages/WishlistPage';
 import { NavLink } from 'react-router-dom';
 
 
-const Header = () => {
+const Header = ({ CartCount, LikeCount }) => {
 
     const [loginModel, setloginModel] = useState(false)
 
@@ -58,7 +57,7 @@ const Header = () => {
     return (
         <>
 
-            <div className='w-full sm:gap-4 gap-3 p-4 bg-gray-300 text-green-950
+            <div className='lg:sticky lg:z-100 lg:top-19 w-full sm:gap-4 gap-3 p-4 bg-gray-300 text-green-950
             flex md:flex-row flex-col md:justify-between md:text-center md:items-center '>
 
                 {/* logo + icons */}
@@ -79,10 +78,10 @@ const Header = () => {
                             size={30}
                             onClick={() => openModel()} />
 
-                         <NavLink to="/cart">
+                        <NavLink to="/cart">
                             <ShoppingCart size={30} className='cursor-pointer' color='black' />
                         </NavLink>
-                        
+
 
                         <NavLink to="/wishlist">
                             <Heart size={30} className='cursor-pointer' color='black' />
@@ -112,15 +111,31 @@ const Header = () => {
                             onClick={() => openModel()} />
 
                         <NavLink to="/cart">
-                            <ShoppingCart size={30} className='cursor-pointer' color='black' />
+                            <div className='relative'>
+                                <ShoppingCart size={30} className='cursor-pointer' color='black' />
+
+                                {CartCount > 0 && <div className="absolute -top-3 -right-2 w-6 h-6 text-xs
+                                 font-bold text-white flex items-center justify-center bg-danger border-2 rounded-full">
+                                    {CartCount}
+                                </div>
+                                }
+                            </div>
                         </NavLink>
 
                         <NavLink to="/wishlist">
-                            <Heart size={30} className='cursor-pointer' color='black' />
+                            <div className='relative'>
+                                <Heart size={30} className='cursor-pointer' color='black' />
+
+                                {LikeCount > 0 && <div className="absolute -top-3 -right-2 flex justify-center  items-center
+                                w-6 h-6 text-xs font-bold text-white bg-danger border-2 rounded-full">
+                                    {LikeCount}
+                                </div>
+                                }
+                            </div>
                         </NavLink>
+
                     </div>
                 </div>
-
             </div>
 
             <Navbar />

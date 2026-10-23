@@ -1,30 +1,38 @@
 import React, { useState } from 'react'
 import { Heart, ShoppingCart } from 'lucide-react';
+import { useOutletContext } from 'react-router-dom';
 
 const WishlistPage = () => {
 
-  const [like, setLike] = useState(() => JSON.parse(localStorage.getItem("wishlist")) || [])
+   
+    // const [like, setLike] = useState(() => JSON.parse(localStorage.getItem("wishlist")) || [])
+ const {like,setLike}  = useOutletContext();
 
-  const Liketoggle = (item) => {
+    // like toggle
+    const Liketoggle = (item) => {
 
-    setLike(prev => {
+        setLike(prev => {
+            const updatedWishlist = prev.filter(items => items.id !== item.id)
+            localStorage.setItem("wishlist", JSON.stringify(updatedWishlist));
+            return updatedWishlist;
+        })
+    }
 
-      const updatedWishlist =  prev.filter(items => items.id !== item.id)
-      localStorage.setItem("wishlist", JSON.stringify(updatedWishlist));
-      return updatedWishlist;
-    })
-  }
-
-  
     return (
         <>
 
+            <p className='mb-0 text-4xl font-bold text-green-900 w-fit p-4
+            hover:text-green-700'>
+                Wishlist <span className='float-right'> <Heart size={40} /> </span>
+            </p>
+
             <div className='w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 p-3 sm:p-8
-             gap-4 my-4 md:my-2 lg:my-2'>
+             gap-4 mb-4'>
+
                 {like.map((item, id) =>
 
                     <div key={item.id} className='border w-full flex flex-col justify-between shadow-md p-2 sm:p-3 lg:p-4 rounded-2xl 
-                    hover:scale-102 transition'>
+                     hover:scale-102 transition'>
 
                         <div className='relative'>
                             <img src={item.image}

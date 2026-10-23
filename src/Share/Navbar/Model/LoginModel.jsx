@@ -6,7 +6,6 @@ import { ValidateEmail, ValidatePassword } from '../../Validation/Validation'
 
 const LoginModel = ({loginModel,setloginModel}) => {
 
-    //  const [loginModel, setloginModel] = useState(false)
  
      // useState form's state
      const [email, setEmail] = useState("")
@@ -34,9 +33,11 @@ const LoginModel = ({loginModel,setloginModel}) => {
          // using useState
          const SubmitHandler = (e) => {
              e.preventDefault();
+
+             const data = localStorage.getItem("login-data") || [] ;
      
              const emailMsg = ValidateEmail(email);
-             const passwordMsg = ValidatePassword(password);
+             const passwordMsg = ValidatePassword(password); 
      
              setEmailError(emailMsg);
              setPasswordError(passwordMsg);
@@ -49,8 +50,10 @@ const LoginModel = ({loginModel,setloginModel}) => {
              setEmail("");
              setPassword("");
              setCheckBox(false);
+
+             localStorage.setItem("login-data",JSON.stringify({email,password}))
+
          }
- 
  
     return (
         <>
@@ -101,7 +104,7 @@ const LoginModel = ({loginModel,setloginModel}) => {
                                 </label>
                             </div>
 
-                            <button type="submit"
+                            <button type="submit" 
                                 className="text-white shadow-xs bg-green-800 font-semibold leading-5 text-sm px-3 py-2.5 focus:outline-none active:scale-95">
                                     Submit</button>
                         </form>
