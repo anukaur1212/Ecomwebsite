@@ -45,7 +45,7 @@ const LoginModel = ({loginModel,setloginModel}) => {
              if (emailMsg || passwordMsg)
                  return
      
-             console.log("form submitted");
+            //  console.log("form submitted");
      
              setEmail("");
              setPassword("");

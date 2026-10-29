@@ -1,3 +1,13 @@
+export const ValidateName = (value) => {
+    if (!/^[a-zA-Z ]+$/.test(value)) {
+        return "Name should contain only letters";
+    }
+
+    if (value.trim().length < 3) {
+        return "Name must be at least 3 characters";
+    }
+}
+
 export const ValidateEmail = (value) => {
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value)) {
         return "Enter a valid email address";
