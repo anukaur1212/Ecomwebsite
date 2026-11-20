@@ -27,7 +27,7 @@ export const SwiperProductCard = ({ id, name, price, oldPrice, image }) => {
                     }`}/>
 
 
-            <div className="leading-3 mt-4 text-left ms-2">
+            <div className="leading-6 mt-4 text-left ms-2">
                 <p className="font-semibold text-gray-700">{name}</p>
                 <p>⭐⭐⭐⭐⭐</p>
 

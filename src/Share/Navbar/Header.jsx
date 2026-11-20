@@ -57,7 +57,7 @@ const Header = ({ CartCount, LikeCount }) => {
     return (
         <>
 
-            <div className='lg:sticky lg:z-100 lg:top-19 w-full sm:gap-4 gap-3 p-4 bg-gray-300 text-green-950
+            <div className='lg:sticky lg:z-100 lg:top-10 w-full sm:gap-4 gap-3 p-4 bg-gray-300 text-green-950
             flex md:flex-row flex-col md:justify-between md:text-center md:items-center '>
 
                 {/* logo + icons */}

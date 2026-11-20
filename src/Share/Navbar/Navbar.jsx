@@ -10,21 +10,8 @@ const Navbar = () => {
 
     return (
         <>
-            <div className='lg:sticky lg:z-100 lg:top-47 w-full flex flex-row
-             items-center px-4 pb-3 bg-gray-300 uppercase'>
-
-                <div className='bg-green-950 w-full lg:w-1/8 text-white px-3 py-2 rounded-2xl
-                 flex justify-between items-center shrink-0'>
-                    <button
-                        className='flex gap-2 shrink-0'>
-                        <Menu size={25} /> CATEGORY
-                    </button>
-
-                    <button onClick={() => setMenuOpen(!menuOpen)}
-                        className='flex gap-2 lg:hidden'>
-                        <Menu size={25} /> MENU
-                    </button>
-                </div>
+            <div className='lg:sticky lg:z-100 lg:top-35 w-full flex
+             items-center px-4 pb-3 bg-gray-300 uppercase justify-between'>
 
                 <ul className="hidden lg:flex lg:w-250 flex-row items-center
                     gap-3 text-xl font-semibold justify-between ml-6 mb-0">
@@ -64,6 +51,19 @@ const Navbar = () => {
                         to="/trackorder">Track Order</NavLink> 
                     </li>
                 </ul>
+
+                  <div className='bg-green-950 w-full lg:w-1/8 text-white px-3 py-2 rounded-2xl
+                 flex justify-between items-center shrink-0 '>
+                     <button onClick={() => setMenuOpen(!menuOpen)}
+                        className='flex gap-2 lg:hidden'>
+                        <Menu size={25} /> MENU
+                    </button>
+                   
+                    <button
+                        className='flex gap-2 shrink-0'>
+                        <Menu size={25} /> CATEGORY
+                    </button>
+                </div>
 
             </div>
 

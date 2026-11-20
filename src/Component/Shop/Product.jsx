@@ -83,7 +83,7 @@ export default function product() {
               </div>
             </NavLink>
 
-            <div className='leading-2 mt-3 ms-2.5'>
+            <div className='leading-6 mt-3 ms-2.5'>
               <p className='font-semibold'>{item.title}</p>
               <p>⭐⭐⭐⭐</p>
 
